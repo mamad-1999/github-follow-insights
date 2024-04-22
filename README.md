@@ -1,9 +1,9 @@
 # GitHub Follow Analyzer 
 
 [![Python Version](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue)](https://www.python.org/downloads/)
-[![GitHub Issues](https://img.shields.io/github/issues/yourusername/github-follow-analyzer)](https://github.com/yourusername/github-follow-analyzer/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/github-follow-analyzer)](https://github.com/yourusername/github-follow-analyzer/stargazers)
-[![GitHub License](https://img.shields.io/github/license/yourusername/github-follow-analyzer)](https://github.com/yourusername/github-follow-analyzer/blob/master/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/mamad-1999/github-follow-insights)](https://github.com/mamad-1999/github-follow-insights/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/mamad-1999/github-follow-insights)](https://github.com/mamad-1999/github-follow-insights/stargazers)
+[![GitHub License](https://img.shields.io/github/license/mamad-1999/github-follow-insights)](https://github.com/mamad-1999/github-follow-insights/blob/master/LICENSE)
 
 ๐ A Python script to analyze your GitHub follow relationships and identify one-way connections where you are following someone, but they are not following you back.
 
