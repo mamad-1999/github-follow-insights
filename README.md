@@ -5,6 +5,13 @@
 [![GitHub Stars](https://img.shields.io/github/stars/mamad-1999/github-follow-insights)](https://github.com/mamad-1999/github-follow-insights/stargazers)
 [![GitHub License](https://img.shields.io/github/license/mamad-1999/github-follow-insights)](https://github.com/mamad-1999/github-follow-insights/blob/master/LICENSE)
 
+
+<p>
+    <a href="https://skillicons.dev">
+      <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Python-Dark.svg" width="48" title="js">
+    </a>
+</p>
+
 ๐ A Python script to analyze your GitHub follow relationships and identify one-way connections where you are following someone, but they are not following you back.
 
 ## ๐ Features
