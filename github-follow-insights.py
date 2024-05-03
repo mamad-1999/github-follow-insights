@@ -30,7 +30,7 @@ def clear_loading_animation():
     sys.stdout.write('\r' + ' ' * 10 + '\r')
     sys.stdout.flush()
 
-def get_users(username, action, list):
+def get_users(username, action, list, content):
     loading_animation()  # Start the loading animation
     page = 1
     try:
@@ -43,7 +43,10 @@ def get_users(username, action, list):
                 
                 
                 for user in users:
-                    list.append(user.get("html_url"))
+                    if content == 'USERNAME':
+                        list.append(user.get("login"))
+                    else:
+                        list.append(user.get("html_url"))
                     
                 if len(users) < 100:
                     break
@@ -75,11 +78,19 @@ print(f"     {colors.OKGREEN}1. Yes")
 print(f"     {colors.FAIL}2. No")
 choice = input(f"     {colors.ENDC}Enter your choice (1 or 2): ")
 choice = "Yes" if choice == "1" else "No" if choice == "2" else None
+content_of_text = "URL"
 print()
 
-get_users(username, "followers", followers)
+if choice == 'Yes':
+    print(f"     {colors.ENDC}The content of the file contains username or Url address")
+    print(f"     {colors.OKGREEN}1. URL")
+    print(f"     {colors.FAIL}2. USERNAME")
+    content_of_text = input(f"     {colors.ENDC}Enter your choice (1 or 2): ")
+    content_of_text = "URL" if content_of_text == "1" else "USERNAME" if content_of_text == "2" else None
+    
+get_users(username, "followers", followers, content_of_text)
 print(f"   {colors.BOLD}{colors.OKGREEN}* Total followers: {colors.OKGREEN}{len(followers)}")
-get_users(username, "following", following)
+get_users(username, "following", following, content_of_text)
 print(f"   {colors.BOLD}{colors.OKGREEN}* Total followings: {colors.OKGREEN}{len(following)}")
 print()
 
