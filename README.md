@@ -20,6 +20,9 @@ And, This Python script allows you to unfollow multiple GitHub users programmati
     </a>
 </p>
 
+### Preview
+![2024-10-09_15-08](https://github.com/user-attachments/assets/7d67a2ce-6d37-4e0a-81fd-4facdcf4481d)
+
 ### Installation
 > [!IMPORTANT]
 > #### Requirements
@@ -35,8 +38,8 @@ cd github-follow-insights
 pip install -r requirements.txt
 ```
 > [!IMPORTANT]
-> #### Prerequisites For github_unfollower.py Script
-> Before using this script, you need to have a GitHub personal access token with the necessary permissions. If you don't have one already, you can generate it [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+> #### Prerequisites
+> Before using this script, you need to have a `GitHub personal access token` with the necessary permissions. If you don't have one already, you can generate it [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 ### Usage
 1. For get the list of users:
@@ -51,6 +54,16 @@ python main.py --token YOUR_GITHUB_TOKEN --unfollow
 ```bash
 python main.py --proxy YOUR-PROXY-SERVER --token YOUR_GITHUB_TOKEN --unfollow
 ```
+> [!NOTE]
+> #### Excluded Users
+> The script uses a file named `excluded_users.txt` to specify GitHub usernames that should be excluded from the unfollow process. This file should be located in the root directory of the script. Each line of the file should contain a single username. Users listed in this file will be ignored during the unfollow operation.
+>
+> Example `excluded_users.txt` content:
+> ```bash
+> tomnomnom
+> torvalds
+> jadijadi
+> ``` 
 
 ### Contributing
 Contributions are always welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
